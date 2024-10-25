@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>태그 사용해보기</title>
+  </head>
+  <body>
+    <h1>안녕하세요 h1입니다.</h1>
+    <!--하나만 쓰는 걸 권장-->
+    <h2>안녕하세요 h1입니다.</h2>
+    <!--하나만 쓰는 걸 권장-->
+
+    <h3>안녕하세요 h1입니다.</h3>
+    <!--하나만 쓰는 걸 권장-->
+    <h4>안녕하세요 h1입니다.</h4>
+    <!--하나만 쓰는 걸 권장-->
+    <h5>안녕하세요 h1입니다.</h5>
+    <!--하나만 쓰는 걸 권장-->
+    <h6>안녕하세요 h1입니다.</h6>
+    <!--하나만 쓰는 걸 권장-->
+
+    <p>오늘은 날씨가 굉장히 좋습니다. 첫번째 수업 날입니다.<br />재미있네요.</p>
+
+    <h3>아이스라떼 만드는 법</h3>
+    <ol type="a">
+      <!--숫자가 기본형. 그 이외에는 영어 대소문자 로마자 등이 올 수 있다.-->
+      <li><b>우유</b>를 <strong>컵</strong>에 넣습니다.</li>
+      <li><i>얼음</i>을 컵에 넣습니다.</li>
+      <li><em>샷</em>을 내려줍니다.</li>
+    </ol>
+
+    <h3>오늘의 할 일</h3>
+    <ul>
+      <!--disc가 기본형. circle이나 square 등이 올 수 있다.-->
+      <li><u>html</u> 공부하기</li>
+      <li>운동하기</li>
+      <li><del>맛있는</del> 점심 먹기</li>
+    </ul>
+
+    <!-- 리스트 중첩 -->
+
+    <ul>
+      <h3>내가 좋아하는 음식</h3>
+      <li>양식</li>
+      <ul>
+        <li>페퍼로니</li>
+        <li>감자튀김</li>
+        <li>파스타</li>
+      </ul>
+      <li>달다구리</li>
+      <ul>
+        <li>크레페</li>
+        <li>사과파이</li>
+        <li>몽블랑</li>
+      </ul>
+    </ul>
+
+    <p>안녕하세요</p>
+    <pre>
+안녕하세요. 
+        오리너구리 찜찜입니다.
+    </pre>
+
+    <detail>
+      <summary>제목1</summary>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem doloribus
+        deleniti dolorem laborum temporibus nam fugiat, eaque quaerat reiciendis
+        blanditiis eligendi voluptatum. Impedit, totam possimus quasi illum
+        laborum corrupti at.
+      </div>
+    </detail>
+
+    <hr />
+
+    <h2>img 태그와 a 태그</h2>
+    <!-- img에는 src 뿐 아니라 alt도 반드시 넣어줘야 함. -->
+
+    <img
+      src="./images/ninesols.jpg"
+      alt="ninesols.jpg"
+    /><!--상대 경로. .은 자신이 있는 위치를 가리킨다.-->
+    <!--절대경로로 쓰면 /의 위치가 매번 달라질 수 있다.-->
+    <img
+      src="/html_01/images/hollowknight.jpg"
+      alt="hollow knight"
+      style="width: 300px; height: 200px"
+    />
+    <img
+      src="https://www.southernliving.com/thmb/bbDY1d_ySIrCFcq8WNBkR-3x6pU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2589601_Mailb_Mailbox_Apple_Pie_003-da802ff7a8984b2fa9aa0535997ab246.jpg"
+      alt="apple pie"
+      style="width: 200px; height: 200px"
+    />
+    <p>
+      나인 솔즈는 이미지 폴더에 있는 것을 가져왔고, 파이 사진은 검색한 이미지의
+      링크를 복사해서 붙여넣었다.<br />
+      나인 솔즈는 상대 경로, 할로우 나이트는 절대 경로.
+    </p>
+
+    <a href="https://www.naver.com" target="_blank">네이버로 이동하기</a>
+    <br />
+    <!-- blank는 새 탭에서 창을 열고, 기본(self)적으로는 내가 있는 탭에서 이동한다. -->
+    <a href="../html_01/html_Start.html">html_start로 이동</a>
+
+    <br />
+
+    <!-- 간단 실습. 사진을 클릭하면 구글로 이동 -->
+    <a href="https://www.google.com">
+      <img src="/html_01/images/sanabi.png" style="width: 300px; height: 200px"
+    /></a>
+  </body>
+</html>

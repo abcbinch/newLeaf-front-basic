@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form 태그 사용해보기.</title>
+  </head>
+  <body>
+    <form>
+      텍스트: <input type="text" /><br />
+      <label for="email4">email</label>
+      이메일:
+      <input
+        type="email"
+        id="email4"
+        placeholder="emailId@naver.com"
+      /><br /><!--input의 id와 label의 for를 똑같이 써주면, 이 둘을 세트로 인식한다.-->
+      비밀번호:
+      <input type="password" placeholder="비밀번호 입력." /><br /><br />
+
+      색 지정: <input type="color" /><br />
+      날짜 설정: <input type="date" /><br />
+      범위 설정: <input type="range" /><br />
+      파일 삽입: <input type="file" /><br />
+      수치 정하기: <input type="number" /><br />
+      <br />
+
+      버튼: <input type="button" value="button" /> 제출 버튼:
+      <input type="submit" value="submit" /><br /><br />
+
+      <h5>다음 중 input type이 아닌 것을 <u>모두</u> 고르시오.</h5>
+      <input type="checkbox" name="answer" />text
+      <input type="checkbox" name="answer" />click
+      <input type="checkbox" name="answer" />img
+      <input type="checkbox" name="answer" />date
+      <input type="checkbox" name="answer" />bread
+      <br />
+
+      <h5>다음 중 img 태그의 속성인 것을 하나만 고르시오.</h5>
+      <label> <input type="radio" name="imgQ" />title </label>
+      <label> <input type="radio" name="imgQ" />value </label>
+      <label> <input type="radio" name="imgQ" />mouse </label>
+
+      <input type="radio" name="imgQ" id="alt" />
+      <label for="alt">alt</label>
+
+      <input type="radio" name="imgQ" id="name" />
+      <label for="name">name</label>
+      <br /><br />
+
+      <!-- select -->
+
+      <select name="flower">
+        <optgroup label="홍백">
+          <option value="rose">장미</option>
+          <option value="lily">백합</option>
+        </optgroup>
+        <optgroup label="백자">
+          <option value="magnolia">목련</option>
+          <option value="lilac">라일락</option>
+        </optgroup>
+
+        <option value="lavendar">라벤더</option>
+      </select>
+    </form>
+  </body>
+</html>

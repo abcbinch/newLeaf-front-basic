@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>이것은 제목이다.</h2>
+
+    <table
+      border="1"
+      bgcolor="lemonchiffon"
+      bordercolor="brown"
+      style="width: 100px; height: 100px; text-align: center"
+    >
+      <caption>
+        전화기
+      </caption>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>#</td>
+        <td>0</td>
+        <td>*</td>
+      </tr>
+    </table>
+
+    <br /><br />
+
+    <h2>가격표</h2>
+
+    <table border="1" cellspacing="0" cellpadding="10px">
+      <!--보더의 공간을 없앤다. border-collapse: collapse 같은 것.-->
+      <!--cellpadding은 칸 내부의 여백을 주는 것.-->
+      <tr>
+        <th>메뉴</th>
+        <th>가격</th>
+        <th>비고</th>
+      </tr>
+      <tr>
+        <td>카페라떼</td>
+        <td>5,000원</td>
+        <td>바닐라 시럽 추천</td>
+      </tr>
+      <tr>
+        <td>아쌈 밀크티</td>
+        <td>5,000원</td>
+        <td>당밀 쿠키 추천</td>
+      </tr>
+      <tr>
+        <td>페퍼민트 티</td>
+        <td>4,500원</td>
+        <td>무카페인</td>
+      </tr>
+    </table>
+
+    <h2>가격표. rowspan colspan</h2>
+
+    <table border="1" cellspacing="0" cellpadding="10px">
+      <tr>
+        <th>메뉴</th>
+        <th>가격</th>
+        <th>비고</th>
+      </tr>
+      <tr>
+        <td>카페라떼</td>
+        <td rowspan="2">5,000원</td>
+        <td>바닐라 시럽 추천</td>
+      </tr>
+      <tr>
+        <td>아쌈 밀크티</td>
+        <td>당밀 쿠키 추천</td>
+      </tr>
+      <tr>
+        <td>페퍼민트 티</td>
+        <td>4,500원</td>
+        <td>무카페인</td>
+      </tr>
+      <tr>
+        <td colspan="3" style="text-align: center">우롱차(품절)</td>
+      </tr>
+    </table>
+  </body>
+</html>
