@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap");
+
+@font-face {
+  font-family: "YeongamWolchulsanTTF";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/YeongamWolchulsanTTF.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-link {
+  font-family: "Hi Melody", sans-serif;
+}
+
+.font-import {
+  font-family: "Hi Melody", sans-serif;
+}
+
+.noonnu_font {
+  font-family: "YeongamWolchulsanTTF", serif;
+}
+
+.container {
+  background: gold;
+  color: red;
+}
+
+.container > .sentences {
+  font-weight: 700;
+  font-size: 16px; /*이게 default*/
+  text-align: center;
+
+  text-decoration: underline;
+  line-height: 2;
+}
+
+.test {
+  width: 100px;
+  height: 100px;
+  background: lightgreen;
+  text-align: center;
+  line-height: 2;
+}
+
+/* p:not(.sentences) {
+  display: block;
+}
+ */

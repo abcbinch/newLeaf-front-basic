@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selector 3-2</title>
+    <style>
+      .zoo > * {
+        background: green;
+        color: white;
+        font-size: 14px;
+      }
+      .zoo > li:last-child {
+        background: black;
+      }
+      .zoo > *:first-child {
+        background: rosybrown;
+      }
+      .zoo > li:nth-child(2n) {
+        background: pink;
+      }
+      .zoo > *:not(div) {
+        font-weight: bold;
+      }
+
+      .div2 {
+        background: pink;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .div2::after {
+        content: "after";
+        background: red;
+      }
+      .div2::before {
+        content: "";
+        background: green;
+        display: inline-block;
+        width: 10px;
+        height: 20px;
+      }
+
+      input[type="disalbed"] {
+        border: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="zoo">
+      <h1>동물원입니다.</h1>
+      <div>아나콘다</div>
+      <li>토끼</li>
+      <li>부엉이</li>
+      <li>늑대</li>
+      <li>호랑이</li>
+      <li>오리너구리</li>
+
+      <li>여우</li>
+      <div>펭귄</div>
+    </ul>
+
+    <div class="div2">가상요소 선택자</div>
+
+    <input type="text" placeholder="text1" />
+    <input type="text" placeholder="text1" />
+    <input type="text" placeholder="text1" disabled />
+  </body>
+</html>

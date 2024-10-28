@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selector 2</title>
+    <style>
+      header {
+        height: 70px;
+        background: lightgreen;
+      }
+      section {
+        border: 1px solid black;
+      }
+      article {
+        border: 1px solid salmon;
+      }
+
+      header > h2 {
+        color: burlywood;
+      }
+      .first > h2 {
+        color: lemonchiffon;
+        background: midnightblue;
+        text-align: center;
+      }
+      .second > h2 {
+        color: midnightblue;
+        background: aliceblue;
+        text-align: center;
+      }
+
+      main > .first > article > ul > li {
+        font-size: 10pt;
+      }
+
+      .second li {
+        font-size: 20pt;
+        background: brown;
+        color: #ffffff;
+      }
+
+      #fairy + li {
+        background: lemonchiffon;
+      }
+      #fairy ~ li {
+        color: midnightblue;
+        font-weight: bold;
+      }
+
+      li#fairy {
+        /*일치 선택자*/
+        background: rosybrown;
+        color: white;
+      }
+      div.moon {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h2>복합선택자 사용해보기</h2></header>
+
+    <main>
+      <section class="first">
+        <h2>첫 번째 섹션</h2>
+        <article><span>전래 동화</span></article>
+        <article>
+          <ul>
+            <li>토끼와 호랑이</li>
+            <li id="fairy">선녀와 나무꾼</li>
+            <li class="moon">햇님 달님</li>
+            <li class="moon">콩쥐 팥쥐</li>
+            <li class="moon"><div class="moon">테스트 div2</div></li>
+
+            <li>은혜갚은 까치</li>
+          </ul>
+        </article>
+      </section>
+      <section class="second">
+        <h2>두 번째 섹션</h2>
+        <ul>
+          <li>신데렐라</li>
+          <li>백설공주</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

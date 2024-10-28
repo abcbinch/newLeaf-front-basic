@@ -1,0 +1,22 @@
+.orange {
+  width: auto;
+  height: 200px;
+  background-color: orange;
+}
+.blue,
+.green,
+.red {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin-right: 30px;
+}
+.blue {
+  background-color: skyblue;
+}
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}

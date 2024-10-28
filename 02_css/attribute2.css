@@ -1,0 +1,28 @@
+.d-block {
+  display: block;
+  background: pink;
+  border: 1px solid coral;
+
+  width: 100px;
+  height: 100px;
+
+  padding: 10px;
+  margin: 10px;
+}
+.d-inline {
+  display: inline;
+  background: antiquewhite;
+  border: beige;
+
+  /*인라인에는 가로 세로 적용 안 됨.*/
+  width: 100px;
+  height: 100px;
+}
+.d-inline-block {
+  display: inline-block;
+  background: rosybrown;
+  border: 1px solid brown;
+
+  width: 100px;
+  height: 100px;
+}
