@@ -121,3 +121,23 @@
   background: #cc0000;
   cursor: pointer;
 }
+/* 구분선 */
+.square > img[alt="winny the pooh"] {
+  width: 200px;
+  height: 200px;
+}
+.over-hidden {
+  overflow: hidden;
+}
+.over-auto {
+  overflow: auto;
+}
+.over-scroll {
+  overflow: scroll;
+}
+.over-visible {
+  overflow: visible;
+  /*verflow-x: hidden;
+  overflow-y: auto;*/
+  overflow: hidden auto;
+}
