@@ -1,0 +1,69 @@
+.container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+
+  border: 2px solid pink;
+}
+div:not(.container) {
+  position: absolute;
+}
+.eye_white {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: white;
+  z-index: 6;
+  top: 220px;
+  left: 130px;
+}
+.eye_black {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background: black;
+  z-index: 7;
+  top: 230px;
+  left: 130px;
+}
+.blue {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+.body1 {
+  background: navy;
+  top: 200px;
+  left: 120px;
+}
+.body2 {
+  background: dodgerblue;
+  z-index: 1;
+  top: 260px;
+  left: 150px;
+}
+.body3 {
+  background: cornflowerblue;
+  z-index: 2;
+  bottom: 90px;
+  right: 200px;
+}
+.body4 {
+  background: skyblue;
+  z-index: 3;
+  bottom: 40px;
+  right: 150px;
+}
+.body5 {
+  background: lightblue;
+  z-index: 5;
+  bottom: 10px;
+  right: 100px;
+}
+.container > .grass {
+  width: 500px;
+  height: 100px;
+  bottom: 0;
+  z-index: 4;
+  background-image: url("/03_css/1030images/grass.png");
+}

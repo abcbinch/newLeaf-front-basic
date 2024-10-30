@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 2000px;
+  background: linear-gradient(white, skyblue);
+  /* 그라데이션 함수 */
+}
+div {
+  width: 100px;
+  height: 100px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 100px;
+  /* 텍스트 가운데 정렬. 라인헤이트랑 텍스트얼라인으로 */
+}
+.p-static {
+  background: pink;
+  position: static;
+}
+.p-relative {
+  background: antiquewhite;
+  position: relative;
+  left: 100px;
+}
+.p-absolute {
+  background: rosybrown;
+  position: absolute;
+  right: 100px;
+  top: 100px;
+}
+.p-fixed {
+  background: lightblue;
+  position: fixed;
+  top: 100px;
+  right: 200px;
+}
+.absolute2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  font-size: 10px;
+  background: mediumseagreen;
+  line-height: 50px;
+  top: 0;
+  bottom: 0;
+}
+/* 구분선 */
+.parent {
+  position: relative;
+  width: 300px;
+  border: 3px dotted dodgerblue;
+}
+.parent > .circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+}
+.circle1 {
+  background: #cc0000;
+  left: 200px;
+}
+.circle2 {
+  background: darkred;
+  left: 150px;
+}
+.circle3 {
+  background: gray;
+  left: 100px;
+  z-index: 10;
+}
+.circle4 {
+  background: lightgray;
+  left: 50px;
+  z-index: 8;
+}
+.circle5 {
+  background: rosybrown;
+  left: 0px;
+}

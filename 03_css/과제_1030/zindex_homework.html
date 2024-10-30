@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>z-index</title>
+    <style>
+      .container {
+        width: 500px;
+        height: 500px;
+        position: relative;
+        border: 2px solid orange;
+      }
+      .container div {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        text-align: center;
+        line-height: 5em;
+      }
+      .item1 {
+        background: pink;
+        z-index: 10;
+      }
+      .item2 {
+        background: antiquewhite;
+        top: 30px;
+        left: 30px;
+        z-index: 1;
+      }
+      .item3 {
+        background: rosybrown;
+        top: 60px;
+        left: 60px;
+        z-index: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      container
+      <div class="item1">item 1</div>
+      <div class="item2">item 2</div>
+      <div class="item3">item 3</div>
+    </div>
+  </body>
+</html>

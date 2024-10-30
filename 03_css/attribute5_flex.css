@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  /* flex-wrap: wrap; */
+  /* flex-wrap: nowrap; */
+  max-width: 1000px;
+  height: 400px;
+  margin: 0 auto; /*가운데 정렬. 위 아래는 0, 양 옆은 auto*/
+  background: #333;
+}
+.container > .items {
+  width: 100px;
+  height: 100px;
+  font: normal bold 2.5rem sans-serif;
+  text-align: center;
+  line-height: 100px;
+}
+.container > .items.item1 {
+  background: pink;
+}
+.container > .items.item2 {
+  background: lemonchiffon;
+}
+.container > .items.item3 {
+  background: rosybrown;
+}
+.container > .items.item4 {
+  background: yellow;
+}
+
+.container > .items.item5 {
+  background: rgb(139, 230, 185);
+}
