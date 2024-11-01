@@ -1,0 +1,75 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background: rosybrown;
+  position: relative;
+
+  /* animation-name: icecream; */
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+/* box의 애니메이션 */
+@keyframes icecream {
+  0% {
+    background: rosybrown;
+    left: 0px;
+  }
+  50% {
+    background: lemonchiffon;
+    left: 100px;
+    border-radius: 25%;
+  }
+  100% {
+    background: pink;
+    left: 200px;
+    border-radius: 50%;
+  }
+}
+/* 공 튀기기 */
+@keyframes playing {
+  from {
+    top: 300px;
+  }
+
+  to {
+    top: 0px;
+  }
+}
+.bounce-ball1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: chocolate;
+  position: absolute;
+  top: 0px;
+  left: 250px;
+
+  animation: playing 1s ease-out infinite alternate;
+}
+@keyframes playing2 {
+  from,
+  to {
+    bottom: 0;
+    width: 55px;
+    /* 천천히 속도를 줄이도록 */
+    animation-timing-function: ease-out;
+  }
+  50% {
+    width: 50px;
+    bottom: 300px;
+    /* 속도가 빨라지도록 */
+    animation-timing-function: ease-in;
+  }
+}
+.bounce-ball2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: pink;
+  position: absolute;
+  bottom: 0;
+
+  animation: playing2 1s infinite;
+}
