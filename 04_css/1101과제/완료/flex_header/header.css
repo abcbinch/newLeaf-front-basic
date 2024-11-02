@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 700;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: lightgray;
+}
+
+.menus {
+  display: flex;
+}
+.header2 > .menus {
+  justify-content: space-between;
+  width: 100%;
+}
+ul li {
+  padding: 0 10px 0 10px;
+}

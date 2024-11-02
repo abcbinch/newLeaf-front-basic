@@ -1,0 +1,17 @@
+@keyframes moving {
+  from {
+    left: 1000px;
+    width: 250%;
+  }
+  to {
+    left: 0px;
+    width: 100%;
+  }
+}
+
+.text {
+  position: relative;
+
+  /* border: 2px solid coral; */
+  animation: moving 3s ease-in-out;
+}
