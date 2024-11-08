@@ -6,14 +6,16 @@
   }
   25% {
     top: 0;
-    left: 90vw;
+    left: calc(100vw - 100px);
+    /* left: 90vw; */
   }
   50% {
-    top: 85vh;
-    left: 90vw;
+    top: calc(100vh - 100px);
+    left: calc(100vw - 100px);
+    /* top: 90vw; */
   }
   75% {
-    top: 85vh;
+    top: calc(100vh - 100px);
     left: 0;
   }
 }
@@ -21,9 +23,13 @@
 /* 브라우저 창 가장자리를 돌게 하려면 %나 vw/vh를 써야 한다 */
 /* 원의 크기하고 이동 거리의 단위를 같게 맞춰야  한다. */
 /* 전체화면으로 놓으면 작업표시줄 때문에 잘리지만, 브라우저만 보면 제대로 가장자리를 돌고 있다. */
+* {
+  margin: 0;
+  padding: 0;
+}
 .ball {
   position: fixed;
-  transform-origin: right;
+  /* transform-origin: right; */
   /* width: 100px; */
   width: 10vmax;
 
@@ -31,9 +37,10 @@
   height: 10vmax;
 
   border-radius: 50%;
-  background: linear-gradient(30deg, gold, orangered);
+  background: linear-gradient(30deg, rgb(133, 131, 119), orangered);
 
   animation-name: running;
   animation-duration: 8s;
   animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }

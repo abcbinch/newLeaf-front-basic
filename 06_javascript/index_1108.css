@@ -1,0 +1,26 @@
+.add-h1 {
+  color: yellowgreen;
+  text-align: center;
+  font-size: 30px;
+  background-color: black;
+}
+
+.p-2 {
+  background-color: yellow;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.p-3 {
+  background-color: skyblue;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.friends {
+  background-color: pink;
+  color: #fff;
+  font-size: 1.3rem;
+}

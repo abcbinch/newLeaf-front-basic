@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이벤트 리스너</title>
+    <style>
+      body {
+        height: 2000px;
+        position: relative;
+      }
+      .btn {
+        width: 80px;
+        height: 35px;
+        border-radius: 13px;
+        text-align: center;
+        line-height: 35px;
+        font-weight: 700;
+        color: white;
+        margin: 10px;
+        cursor: pointer;
+      }
+      .pink {
+        background-color: pink;
+      }
+      .lemonchiffon {
+        background-color: lemonchiffon;
+      }
+      .rosybrown {
+        background-color: rosybrown;
+      }
+      .mint {
+        background-color: rgb(140, 210, 175);
+      }
+      .blueberry {
+        background-color: rgb(186, 87, 170);
+      }
+      .orange {
+        width: 150px;
+        height: 250px;
+        position: absolute;
+        bottom: 500px;
+        opacity: 0.3;
+        transition: 4s;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- .btn{버튼$}*5 -->
+    <div class="btn pink">버튼1</div>
+    <div class="btn lemonchiffon">버튼2</div>
+    <div class="btn rosybrown">버튼3</div>
+    <div class="btn mint">버튼4</div>
+    <div class="btn blueberry" onclick="iceOrder()">버튼5</div>
+
+    <div id="container"></div>
+
+    <button>Eat me!</button>
+    <input type="text" value="eat me" />
+    <div class="btn orange">Orange</div>
+    <form id="todo-form">
+      <input type="text" name="todo" />
+      <button>Add</button
+      ><!-- 기본값이 submit -->
+    </form>
+
+    <ul class="todo-list"></ul>
+
+    <h3>변경 이벤트</h3>
+    <input type="text" id="change-input" />
+    <div class="intro"></div>
+    <script src="./JSgroup_1108/event_prac.js"></script>
+  </body>
+</html>
+
+
