@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./look_recipe.css" />
+  </head>
+  <body>
+    <h1 class="text-center fw-bold">레시피 북</h1>
+    <a href="recipe_hub.html" title="허브로 돌아가기"
+      ><i class="bi bi-house-door-fill"></i
+    ></a>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            집밥
+          </button>
+        </h2>
+
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <ul>
+              <li>
+                <p class="d-inline-flex gap-1">
+                  <a
+                    class="btn btn-warning"
+                    data-bs-toggle="collapse"
+                    href="#collapseExample7"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    고등어 조림
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample7">
+                  <div class="card card-body">
+                    <ol>
+                      <li>고등어를 토막냅니다.</li>
+                      <li>
+                        간장, 고추장, 고춧가루, 맛술, 조청, 참기름, 물을 넣고
+                        양념장을 만듭니다.
+                      </li>
+                      <li>
+                        토막낸 무, 감자, 고등어를 냄비에 넣은 뒤 물에 넣고
+                        끓입니다.
+                      </li>
+                      <li>양념장을 물에 풀고 잘 끓여줍니다.</li>
+                    </ol>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <p class="d-inline-flex gap-1">
+                  <a
+                    class="btn btn-warning"
+                    data-bs-toggle="collapse"
+                    href="#collapseExample8"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    카레라이스
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample8">
+                  <div class="card card-body">
+                    <ol>
+                      <li>
+                        감자, 양파, 당근을 깍둑썰고, 고기를 먹기 좋은 크기로
+                        자릅니다.
+                      </li>
+                      <li>
+                        고기와 당근을 먼저 냄비에 볶습니다. 어느 정도 익으면
+                        감자와 양파를 넣고 같이 볶습니다.
+                      </li>
+                      <li>재료들이 약간 잠길 정도로 물을 붓고, 끓입니다.</li>
+                      <li>카레가루에 물을 약간 넣고 곱게 개어줍니다.</li>
+                      <li>
+                        냄비에 카레물을 넣고 잘 풀어준 뒤 계속 끓여줍니다.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <p class="d-inline-flex gap-1">
+                  <a
+                    class="btn btn-warning"
+                    data-bs-toggle="collapse"
+                    href="#collapseExample9"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    김치찌개
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample9">
+                  <div class="card card-body">
+                    <ol>
+                      <li>
+                        냄비에 고기와 김치, 잘게 썬 야채를 넣고 잘 볶아줍니다.
+                      </li>
+                      <li>물, msg, 김칫국물을 넣어줍니다.</li>
+                      <li>재료들이 익을 때까지 푹 끓여줍니다.</li>
+                    </ol>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            디저트
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <ul>
+              <li>
+                <p class="d-inline-flex gap-1">
+                  <a
+                    class="btn btn-warning"
+                    data-bs-toggle="collapse"
+                    href="#collapseExample4"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    동물 쿠키
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample4">
+                  <div class="card card-body">
+                    <ol>
+                      <li>
+                        실온에 둔 버터를 잘 풀어서 크림상태로 만들어 줍니다.
+                      </li>
+                      <li>
+                        슈거파우더를 넣고 섞다가, 풀어둔 계란을 조금씩 넣으면서
+                        섞어줍니다.
+                      </li>
+                      <li>
+                        밀가루와 베이킹파우더를 체 쳐서 넣고 자르듯이
+                        섞어줍니다.
+                      </li>
+                      <li>
+                        도마에 밀가루를 뿌리고 반죽을 올린 뒤 밀대로 밀어줍니다.
+                      </li>
+                      <li>동물 모양 쿠키틀로 찍어줍니다.</li>
+                      <li>180도로 예열한 오븐에서 13~15분 정도 구워줍니다.</li>
+                      <li>기호에 따라 초코펜으로 얼굴을 그려줍니다.</li>
+                    </ol>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <p class="d-inline-flex gap-1">
+                  <a
+                    class="btn btn-warning"
+                    data-bs-toggle="collapse"
+                    href="#collapseExample5"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    팬케이크
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample5">
+                  <div class="card card-body">
+                    <ol>
+                      <li>밀가루, 베이킹파우더, 설탕, 소금을 잘 섞어줍니다.</li>
+                      <li>
+                        다른 그릇에 계란과 우유(또는 물)를 넣고 잘 섞어줍니다.
+                      </li>
+                      <li>
+                        밀가루 혼합물을 계란물에 넣고 섞습니다. 두어 번 젓다가
+                        녹인버터를 섞습니다. 날가루가 보이지 않을 정도로만
+                        섞으면 됩니다.
+                      </li>
+                      <li>
+                        팬에 식용유를 두른 뒤 키친타올로 한 번 닦아줍니다.
+                      </li>
+                      <li>
+                        예열한 팬에 반죽을 한 국자 붓고, 40초 정도 굽다가 기포가
+                        올라올 때 뒤집어 줍니다.
+                      </li>
+                      <li>뒤집은 뒤 30초 정도 더 굽고 접시로 옮겨줍니다.</li>
+                    </ol>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <p class="d-inline-flex gap-1">
+                  <a
+                    class="btn btn-warning"
+                    data-bs-toggle="collapse"
+                    href="#collapseExample6"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    전자레인지 머핀
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample6">
+                  <div class="card card-body">
+                    <ol>
+                      <li>
+                        머그컵 안에 계란, 녹인버터, 설탕, 밀가루, 베이킹
+                        파우더를 넣고 섞어줍니다.
+                      </li>
+                      <li>전자레인지에 1분 돌립니다.</li>
+                      <li>
+                        꺼내서 젓가락으로 찔러봅니다. 묻어나오는 게 있으면 덜
+                        익은 것이므로, 전자레인지에 30초씩 상태를 봐가며
+                        돌려줍니다.
+                      </li>
+                      <li>묻어나오는 게 없으면 완성입니다.</li>
+                    </ol>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            음료
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <ul>
+              <li>
+                <p class="d-inline-flex gap-1">
+                  <a
+                    class="btn btn-warning"
+                    data-bs-toggle="collapse"
+                    href="#collapseExample1"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    카페 라떼
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample1">
+                  <div class="card card-body">
+                    <ol>
+                      <li>컵에 우유를 붓습니다</li>
+                      <li>우유에 에스프레소 샷을 붓습니다.</li>
+                      <li>기호에 따라 시럽을 추가합니다.</li>
+                    </ol>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <p class="d-inline-flex gap-1">
+                  <a
+                    class="btn btn-warning"
+                    data-bs-toggle="collapse"
+                    href="#collapseExample2"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    밀크티
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample2">
+                  <div class="card card-body">
+                    <ol>
+                      <li>
+                        뜨거운 물을 150ml 정도 붓고 홍차를 10분 이상 진하게
+                        우려줍니다.
+                      </li>
+                      <li>우유 150ml를 따뜻하게 데운 뒤, 홍차에 붓습니다.</li>
+                      <li>기호에 따라 시럽 및 설탕을 추가합니다.</li>
+                    </ol>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <p class="d-inline-flex gap-1">
+                  <a
+                    class="btn btn-warning"
+                    data-bs-toggle="collapse"
+                    href="#collapseExample3"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    고구마 라떼
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample3">
+                  <div class="card card-body">
+                    <ol>
+                      <li>고구마를 껍질을 벗긴 뒤 30분 이상 푹 쪄줍니다.</li>
+                      <li>믹서기에 고구마를 잘라서 넣습니다.</li>
+                      <li>고구마가 잠길 정도로 우유를 부어 줍니다.</li>
+                      <li>믹서기로 곱게 갈아줍니다.</li>
+                      <li>
+                        컵에 적당량을 부은 뒤, 기호에 따라 우유나 꿀을
+                        추가합니다.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

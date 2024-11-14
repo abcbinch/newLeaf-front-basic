@@ -1,0 +1,86 @@
+header,
+.inner {
+  background: powderblue;
+  width: 100%;
+  height: 100px;
+}
+header > .inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 1000px; /*1000이상으로 커지지 않는다. 그렇게 되면 부모 길이를 따라간다*/
+  margin: auto;
+}
+.fa-igloo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  font-size: 40pt;
+  text-align: center;
+  line-height: 2em;
+  color: white;
+}
+.fa-bars {
+  display: none;
+}
+header > .inner > .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style-type: none;
+}
+header > .inner > .menu li {
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 15pt;
+}
+
+header > .inner > .burger {
+  display: none;
+}
+header > .inner > .small-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header > .inner > .menu {
+    display: none;
+  }
+  header > .inner > .burger {
+    display: block;
+    float: right;
+
+    border: 3px solid gold;
+  }
+  /* header > .inner > .burger > .fa-bars {
+    display: block;
+  } */
+  header > .inner > .logo {
+    width: 100%;
+  }
+  .fa-igloo {
+
+    border: 3px dashed blue;
+  }
+  header > .inner > .small-menu {
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+
+    border: 3px solid green;
+  }
+  header > .inner > .small-menu li {
+    margin: 0;
+    padding: 10px 0;
+    font-weight: normal;
+    text-align: center;
+    list-style-type: none;
+    border: 2px dashed rosybrown;
+  }
+}

@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "RixXladywatermelonR";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-4@1.0/RixXladywatermelonR.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "RixXladywatermelonR";
+  background: lemonchiffon;
+}
+h1 {
+  margin: 20px 0;
+  color: rosybrown;
+}
+.bi-house-door-fill {
+  color: rosybrown;
+  font-size: 40pt;
+  float: right;
+}
+
+@media screen and (max-width: 768px) {
+  .bi-house-door-fill {
+    position: fixed;
+    z-index: 10;
+    transition: translate(50%);
+    bottom: 0;
+    left: 45%;
+    /*가운데 정렬*/
+    /*text align도 안되고 margin auto도 안 되고*/
+  }
+}

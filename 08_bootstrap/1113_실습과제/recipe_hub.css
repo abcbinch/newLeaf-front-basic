@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "RixXladywatermelonR";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-4@1.0/RixXladywatermelonR.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "RixXladywatermelonR";
+  background: lemonchiffon;
+}
+h1 {
+  margin: 20px 0;
+  color: rosybrown;
+}
+.container {
+  background: white;
+  height: 700px;
+}
+img {
+  width: 200px;
+  height: 250px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: 1200px;
+  }
+
+  /*어떻게 해야 가로 세로 길이를 바꿀 수 있을까*/
+  .card {
+    width: 420px;
+    height: 200px;
+  }
+  img {
+    width: 250px;
+    height: 200px;
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반응형 웹, 미디어 쿼리</title>
+    <style>
+      /* body {
+        background: coral;
+      } */
+      /* 관계가 구체적일수록 우선순위가 높아진다 */
+      /* .outer > .inner > h1 {
+        font-size: 32px;
+        color: skyblue;
+      } */
+
+      /*
+      기준점은 두 가지.
+      min-width, max-width.
+      max => --px 이하일 때, 내부의 코드를 수행한다. (0~--px까지는 해당 스타일이다)
+      이런 경우 가장 큰 사이즈 먼저 제작 후 모바일 사이즈를 제작한다.
+      min => --px 이상일 때, 내부의 코드를 수행한다.
+      이런 경우 가장 작은 사이즈 먼저 제작 후 가장 큰 사이즈를 제작한다.
+
+      태블릿, 모바일, PC, 최소한 이 세가지를 고려해야 한다.
+      */
+
+      /*관계의 우선순위에 따라서는 미디어 쿼리 내부의 코드가 안 먹힐 수도 있다.*/
+      /* @media screen and (max-width: 700px) {
+        .outer > .inner > h1 {
+          font-size: 16px;
+          color: chocolate;
+        }
+        body {
+          background: lemonchiffon;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .outer > .inner > h1 {
+          font-size: 10px;
+          color: lemonchiffon;
+        }
+        body {
+          background: midnightblue;
+        }
+      }
+
+      @media screen and (min-width: 300px) {
+        .outer > .inner > h1 {
+          color: pink;
+        }
+      } */
+      .mobile {
+        display: none;
+      }
+      .pc {
+        display: block;
+      }
+
+      @media screen and (max-width: 412px) {
+        .mobile {
+          display: block;
+        }
+        .pc {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner">
+        <h1>hello world</h1>
+      </div>
+    </div>
+
+    <!-- 500px 기준으로 mobile 환경에서는 mobile이라는 글자만 보이고, PC 환경에서는
+    PC라는 글자만 보이도록 하기. -->
+    <p class="mobile">mobile</p>
+    <p class="pc">PC</p>
+  </body>
+</html>

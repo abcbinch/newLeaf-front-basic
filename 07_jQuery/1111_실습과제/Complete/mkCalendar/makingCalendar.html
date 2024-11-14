@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>달력 만들기</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./mkCalendar.css" />
+  </head>
+  <body>
+    <label for="date">날짜: </label><input type="text" id="date" /><br />
+    <label for="content">내용: </label><input type="text" id="content" /><br />
+    <button>작성</button>
+
+    <div class="calendar">
+      <h1>2024년 11월 달력</h1>
+      <table>
+        <tr>
+          <th class="sun">일</th>
+          <th>월</th>
+          <th>화</th>
+          <th>수</th>
+          <th>목</th>
+          <th>금</th>
+          <th class="sat">토</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>1</td>
+          <td class="sat">2</td>
+        </tr>
+        <tr>
+          <td class="sun">3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td class="sat">9</td>
+        </tr>
+        <tr>
+          <td class="sun">10</td>
+          <td>11</td>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td class="sat">16</td>
+        </tr>
+        <tr>
+          <td class="sun">17</td>
+          <td>18</td>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td class="sat">23</td>
+        </tr>
+        <tr>
+          <td class="sun">24</td>
+          <td>25</td>
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+          <td class="sat">30</td>
+        </tr>
+      </table>
+    </div>
+    <script src="./mkCalendar.js"></script>
+  </body>
+</html>

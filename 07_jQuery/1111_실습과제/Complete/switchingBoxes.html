@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>(반응형) 상자 위치 바꾸기</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .cubeLamp {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background: black;
+        border-radius: 5%;
+        border: 1px solid red;
+      }
+
+      @media screen and (max-width: 700px) {
+        /*700이하일 때*/
+        .container {
+          flex-direction: column;
+        }
+        .cubeLamp {
+          background: skyblue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cubeLamp"></div>
+      <div class="cubeLamp"></div>
+      <div class="cubeLamp"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;
+  color: lightseagreen;
+}
+.calendar {
+  margin: auto 0;
+
+  border: 1px solid skyblue;
+}
+.calendar > table {
+  width: 700px;
+  height: 550px;
+  margin: 0 auto;
+}
+.calendar > table > tr > th {
+  width: 100px;
+  height: 50px;
+}
+.calendar > table tr td {
+  width: 100px;
+  height: 100px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.calendar > table,
+tr,
+th,
+td {
+  border: 1px solid black;
+}
+.sun {
+  color: red;
+}
+.sat {
+  color: blue;
+}

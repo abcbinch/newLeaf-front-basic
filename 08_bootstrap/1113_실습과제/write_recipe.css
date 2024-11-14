@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "RixXladywatermelonR";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-4@1.0/RixXladywatermelonR.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "RixXladywatermelonR";
+  background: lemonchiffon;
+}
+h1 {
+  margin: 20px 0;
+  color: rosybrown;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 1000px;
+  height: 500px;
+  padding: 20px;
+}
+.bi-house-door-fill {
+  position: relative;
+  color: rosybrown;
+  font-size: 40pt;
+  float: right;
+  right: 50px;
+}
+input[type="text"] {
+  width: 600px;
+}
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bd-white-bg);
+  --bs-tooltip-color: var(--bs-black);
+}
+
+@media screen and (max-width: 768px) {
+  .bi-house-door-fill {
+    position: fixed;
+    color: rosybrown;
+    font-size: 40pt;
+    left: 45%;
+    bottom: 0;
+  }
+
+  /*디바이스 크기가 작아졌을 때 가운데 정렬을 어떻게 시킬까*/
+  /*자꾸만 화면 밖으로 빠져 나가서 잘리는데*/
+  form {
+    display: block;
+    max-width: 700px;
+    height: 100%;
+  }
+  input[type="text"] {
+    width: 300px;
+    margin: 20px auto;
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap grid System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>layout</h1>
+
+    <h2>container</h2>
+    <div class="container bg-danger-subtle">container</div>
+    <div class="container-fluid bg-warning-subtle">container-fluid</div>
+
+    <div class="container text-center">
+      <!-- col의 합은 12개다. 한번 col-4 이런 식으로 숫자 써보기 -->
+      <!-- col 에 n을 쓰면 12 중에서 n의 비율만큼 차지하게 된다.  -->
+      <!-- col-2: 6등분을 해서 그 중 하나를 가져간다.  -->
+      <!-- col-4: 3등분을 해서 그 중 하나를 가져간다.  -->
+      <!-- 디바이스 환경에 맞게 layout을 구성할 수 있다.  -->
+      <div class="row">
+        <div class="col bg-success-subtle">column</div>
+        <div class="col bg-warning-subtle">column</div>
+        <div class="col bg-info-subtle">column</div>
+        <div class="col bg-secondary-subtle">column</div>
+      </div>
+      <div class="row">
+        <div class="col bg-primary">col</div>
+        <div class="col bg-warning-subtle">col</div>
+        <div class="col bg-success">col</div>
+        <div class="col bg-info">col</div>
+        <div class="col bg-success-subtle">col</div>
+        <div class="col bg-secondary">col</div>
+      </div>
+      <div class="container mt-1">
+        <div class="row">
+          <div class="col-4 bg-warning">col</div>
+          <div class="col-4 bg-danger">col</div>
+          <div class="col-4 bg-warning">col</div>
+        </div>
+      </div>
+      <!-- 
+      col-xl- : 1200 <= 화면 크기
+      col-lg- : 768 <=화면 크기 < 1200
+      col-md- : 768 <= 화면 크기 < 992
+      col-sm- : 576 <= 화면크기 < 768
+      col-1 : 화면크기가 <576px  일때만 실행된다
+      -->
+      <div class="container">
+        <div class="row">
+          <div class="col bg-success-subtle col-12 col-sm-6 col-md-4">
+            device
+          </div>
+          <div class="col bg-success text-white col-12 col-sm-6 col-md-4">
+            device
+          </div>
+        </div>
+      </div>
+
+      <!-- 
+      .container > .row > .col*6
+      xl일 때: 한 줄을 6등분
+      md일 때: 두 줄을 3등분
+      sm일 때: 두 줄이 1:2:1이 되도록 
+      sm보다 작을 때(xs): 6줄이 되도록
+
+      xs는 따로 col-xs 이런 식으로 쓸 필요 없다.
+      그냥 col-12 이런 식으로 쓰면, 제일 작은 크기일 때 
+      한 줄을 차지하게 된다.
+      -->
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 bg-primary-subtle col-xl-2 col-md-4 col-sm-3">
+          practice
+        </div>
+        <div class="col-12 bg-secondary-subtle col-xl-2 col-md-4 col-sm-6">
+          practice
+        </div>
+        <div class="col-12 bg-danger-subtle col-xl-2 col-md-4 col-sm-3">
+          practice
+        </div>
+        <div class="col-12 text-bg-success col-xl-2 col-md-4 col-sm-3">
+          practice
+        </div>
+        <div class="col-12 text-bg-info col-xl-2 col-md-4 col-sm-6">
+          practice
+        </div>
+        <div class="col-12 text-bg-warning col-xl-2 col-md-4 col-sm-3">
+          practice
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
