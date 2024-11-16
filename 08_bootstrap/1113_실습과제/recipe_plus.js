@@ -15,6 +15,7 @@ let recipe = document.querySelector(".recipe");
 
 let addBtn = document.querySelector(".add");
 
+
 function namePlus() {
   let h2 = document.createElement("h2");
   let foodText = food.value;
@@ -37,6 +38,8 @@ function orderPlus() {
 //change
 //click
 
+
+
 food.addEventListener("change", namePlus);
 order.addEventListener("change", orderPlus);
 // compBtn.onclick = () => {
@@ -49,10 +52,4 @@ order.addEventListener("change", orderPlus);
 //     });
 //   });
 // };
-let compBtn = document.querySelector(".complete");
-compBtn.addEventListener("click", function (e) {
-  e.preventDefault();
-  Swal.fire({
-    title: "레시피가 저장되었습니다!",
-  });
-});
+
