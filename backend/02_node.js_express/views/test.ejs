@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJS 사용해보기</title>
+    <link href="/static/css/test.css" rel="stylesheet" />
+    <%- include('./include/head', {title: '회원 가입'})%>
+  </head>
+  <body>
+    <%- include("./include/header.ejs")%>
+    <h1>cafe latte</h1>
+    <% for(let i=0; i<5; i++){ %>
+    <p>add <%= i+1 %> shot and syrup!</p>
+    <% } %>
+    <!-- <img src="/static/images/latte2.jpg" alt="latte" /> -->
+    <%for(let j=0;j<5;j++){%>
+    <img src="/static/images/latte<%= j+1 %>.jpg" alt="latte<%= j +1%>" />
+    <%}%>
+  </body>
+</html>
