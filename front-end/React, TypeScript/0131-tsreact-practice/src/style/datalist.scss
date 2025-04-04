@@ -1,0 +1,17 @@
+.data-list {
+  li {
+    > p {
+      font-weight: bold;
+      color: rosybrown;
+    }
+  }
+}
+
+.data-list-2 {
+  li {
+    > p {
+      font-weight: bold;
+      color: darkcyan;
+    }
+  }
+}

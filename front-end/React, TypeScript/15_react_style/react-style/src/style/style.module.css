@@ -1,0 +1,28 @@
+.container {
+  border: 2px dashed gold;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.box2 {
+  background-color: lemonchiffon;
+}
+
+.box2 div {
+  background-color: rosybrown;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first {
+  color: lavender;
+  font-size: 1.5rem;
+}
+
+.second {
+  background-color: midnightblue;
+  border: 2px dashed pink;
+}

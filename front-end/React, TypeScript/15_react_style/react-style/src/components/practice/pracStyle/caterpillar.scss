@@ -1,0 +1,68 @@
+.larva {
+  position: relative;
+  height: 400px;
+  border: 2px dashed lightgreen;
+}
+
+.body {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  //반복문으로 몸통 색 넣기기
+  $bodyColors: (dodgerblue, blue, midnightblue, skyblue, aliceblue);
+  @each $el in $bodyColors {
+    $index: index($bodyColors, $el);
+    &:nth-of-type(#{$index}) {
+      background-color: $el;
+    }
+  }
+  //위치 조정
+  &.head {
+    left: 50px;
+    top: 50px;
+  }
+  &1 {
+    left: 120px;
+    top: 0px;
+  }
+  &2 {
+    left: 170px;
+    top: -60px;
+  }
+  &3 {
+    left: 230px;
+    top: -150px;
+  }
+  &.tail {
+    left: 290px;
+    top: -250px;
+    z-index: 5;
+  }
+}
+
+.eye {
+  position: relative;
+  border-radius: 50%;
+
+  &-white {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    left: 20px;
+    top: 10px;
+  }
+
+  &-black {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    left: 0px;
+    top: 6px;
+  }
+}
+
+.grass {
+  position: relative;
+  top: -350px;
+}

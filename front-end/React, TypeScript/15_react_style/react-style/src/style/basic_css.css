@@ -1,0 +1,10 @@
+.box1 {
+  background-color: lemonchiffon;
+}
+.box1 div {
+  height: 100px;
+  width: 100px;
+  background-color: rosybrown;
+  color: lemonchiffon;
+  text-align: center;
+}

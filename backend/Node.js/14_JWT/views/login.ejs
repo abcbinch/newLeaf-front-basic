@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JWT login</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1>로그인</h1>
+    <form name="loginForm">
+      <input type="text" id="id" placeholder="아이디를 입력하세요." /><br />
+      <input
+        type="password"
+        id="pw"
+        placeholder="비밀번호를 입력하세요."
+      /><br /><br />
+      <button type="button" onclick="login()">로그인</button>
+    </form>
+    <script>
+      /* 
+      로컬 스토리지
+       -쿠키랑 비슷하다.
+       -객체 형태의 데이터, 키-값 쌍으로 저장.
+       -클라이언트의 저장소
+       -문자열 데이터만 저장 가능
+       -작은 데이터만 저장 가능. 5KB 정도. 쿠키도 4KB 정도만 저장 가능.
+       -영구적으로 저장 가능. 컴퓨터나 브라우저를 꺼도 유지된다.
+       -클라이언트에서 접근 가능
+      localStorage.setItem('키 이름', '값');//로컬 스토리지 설정
+      localStorage.getItem('키 이름')//키에 대한 값 가지고 오기
+      localStorage.removeItem('키 이름')//키에 대한 값 삭제
+      localStorage.clear()//로컬 스토리지 전체 삭제
+      */
+      async function login() {
+        const form = document.forms["loginForm"];
+        const pack = {
+          id: form.id.value,
+          pw: form.pw.value,
+        };
+        //오류 나면, 쓰던 대로 쓰기
+        const loginResponse = await axios.post("/login", pack);
+
+        console.log(loginResponse.data);
+
+        const { message, token, result } = loginResponse.data;
+
+        if (result) {
+          // 토큰 정보를 로컬 스토리지에 저장
+          localStorage.setItem("login", token);
+          document.location.href = "/";
+        } else {
+          alert(message);
+          form.reset();
+        }
+      }
+    </script>
+  </body>
+</html>

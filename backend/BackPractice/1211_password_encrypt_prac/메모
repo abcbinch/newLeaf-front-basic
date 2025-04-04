@@ -1,0 +1,32 @@
+findOne을 수행한 결과가 대략 이렇게 나온다.
+자세한 건 Cuser.js 파일과 letLogin.js 참고.
+
+prac_user {
+  dataValues: { id: 2, pw: '1225', name: '코코아맛 쿠키 ', userid: 'cocoa' },
+  _previousDataValues: { id: 2, pw: '1225', name: '코코아맛 쿠키 ', userid: 'cocoa' },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: false,
+    _schema: null,
+    _schemaDelimiter: '',
+    raw: true,
+    attributes: [ 'id', 'pw', 'name', 'userid' ]
+  },
+  isNewRecord: false
+}
+
+여기서 원하는 데이터를 꺼내고 싶다면
+loginDBRes.prac_user
+loginDBRes.prac_user.dataValues
+loginDBRes.dataValues
+loginDBRes.dataValues.userid
+
+이건 전부 안 통한다.
+
+그냥,
+
+loginDBRes.userid
+
+이렇게 바로 중간에 있는 키 이름들(prac_user, dataValues)을
+전부 건너뛴다.

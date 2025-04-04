@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.1"
+  },
+  "name": "15_crypto",
+  "version": "1.0.0",
+  "main": "bcrypt.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node crypto.js",
+    "answer": "node cryptoAnswer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

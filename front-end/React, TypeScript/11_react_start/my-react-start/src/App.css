@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.App > .prac4 {
+  background-color: moccasin;
+  color: orange;
+  border: 2px dashed rosybrown;
+}

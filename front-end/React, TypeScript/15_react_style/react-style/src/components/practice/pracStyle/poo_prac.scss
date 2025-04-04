@@ -1,0 +1,42 @@
+.cards {
+  display: flex;
+  width: 1000px;
+  margin: 5px;
+}
+
+.poo_friends {
+  width: 200px;
+  height: 400px;
+  background-color: lavender;
+  border-radius: 20px;
+  box-shadow: gray 1px 5px 5px 1px;
+
+  &.iyor {
+    background-image: url("../pracImg/practice1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid purple;
+  }
+
+  &.tiger {
+    background-image: url("../pracImg/practice2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid orange;
+  }
+
+  &.tiger-poo {
+    background-image: url("../pracImg/practice3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid gold;
+  }
+
+  &.figlet {
+    background-image: url("../pracImg/practice4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid pink;
+  }
+}

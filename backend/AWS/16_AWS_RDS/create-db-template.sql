@@ -1,0 +1,17 @@
+CREATE DATABASE newLeafRDS
+    DEFAULT CHARACTER SET = 'utf8mb4' COLLATE utf8mb4_unicode_ci;
+
+CREATE USER 'sesac'@'%' IDENTIFIED BY '0401';
+
+--새로운 user인 sesac에게 newLeafRDS 데이터베이스 접근 권한 부여
+GRANT ALL PRIVILEGES ON newLeafRDS.* TO 'sesac'@'%' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+
+SELECT * FROM `Users`;
+
+SHOW DATABASES;
+
+USE newLeafRDS;
+
+SHOW TABLES;

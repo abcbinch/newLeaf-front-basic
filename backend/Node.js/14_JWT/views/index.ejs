@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JWT</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1>JWT</h1>
+    <div id="info"></div>
+    <script>
+      //즉시 실행 함수
+
+      /*  (function text(txt) {
+        console.log(txt);
+      })("hello, i am namujulgi"); */
+      //호출하자마자 부르는 것이다.
+
+      //화살표함수도 가능하다
+      /*   (() => {
+        console.log("arrow function");
+      })(); */
+      //익명함수도 가능하다.
+      /*   (function () {
+        console.log("익명함수, 즉시 실행");
+      })(); */
+
+      //전역변수 선언을 피하기 위해서 즉시 실행을 하는 것
+      //여기서부터는 jwt 즉시 실행 함수로 확인
+      (async function () {
+        const token = localStorage.getItem("login");
+        const info = document.getElementById("info");
+        let data;
+        console.log(token); //token이 없을 때는 null 값이 들어가있다.
+        if (!token) {
+          //토큰이 없다면 로그인 버튼만 보여준다
+          data = `<a href='/login'>로그인</a>`;
+        } else {
+          //토큰이 있다면
+          //POST /token 으로
+          //headers에 담아 보낸다.
+          const response = axios({
+            method: "post",
+            url: "/token",
+            headers: {
+              //토큰은 headers에 담아 보낸다.
+              Authorization: `Bearer ${token}`,
+              //토큰을 보낼 때는 Bearer를 앞에 붙여줘야 한다.
+            },
+          });
+
+          console.log(response.data); //왜 아무것도 안 나오지?
+          //app.js에서 app.post('/token')을 확인해보자
+          //토큰 검증 과정(서버에서 진행)을 거쳐서
+          //환영인사와 로그아웃 버튼이 나타난다.
+          if (response.data.result) {
+            data = `
+          <p>${response.data.name}님, 환영합니다!</p>
+          <button>로그아웃</button>`;
+          }
+        }
+
+        info.innerHTML = data;
+      })();
+
+      function logout() {
+        localStorage.clear();
+        document.location.reload();
+      }
+    </script>
+  </body>
+</html>

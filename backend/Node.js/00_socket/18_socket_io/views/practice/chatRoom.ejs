@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>채팅방</title>
+    <!-- socket.io CDN -->
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <!-- ~ 가 입장했습니다!! -->
+    <div id="users"></div>
+
+    <!-- 채팅방 내용 -->
+    <div id="space"></div>
+
+    <form id="chat">
+      <input type="text" id="message" placeholder="채팅 작성" />
+      <button>보내기</button>
+    </form>
+    <script src="/static/pracJs/chatroom.js"></script>
+  </body>
+</html>
